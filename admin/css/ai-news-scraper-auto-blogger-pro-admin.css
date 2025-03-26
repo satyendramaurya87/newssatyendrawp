@@ -1,0 +1,233 @@
+/**
+ * Admin Area Styles for AI News Scraper & Auto Blogger Pro
+ */
+
+/* Main container styling */
+.ai-news-scraper-container {
+    padding: 20px;
+}
+
+.ai-news-scraper-header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--bs-border-color);
+    padding-bottom: 20px;
+}
+
+.ai-news-scraper-header h1 {
+    font-size: 2rem;
+    color: var(--bs-primary);
+    display: flex;
+    align-items: center;
+}
+
+.ai-news-scraper-header h1 i {
+    margin-right: 10px;
+}
+
+.ai-news-scraper-header p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: var(--bs-secondary);
+}
+
+/* Card styling */
+.ai-news-scraper-card {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ai-news-scraper-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.ai-news-scraper-card .card-header {
+    border-radius: 8px 8px 0 0;
+    font-weight: 600;
+}
+
+.ai-news-scraper-card .card-footer {
+    border-radius: 0 0 8px 8px;
+}
+
+/* Feature cards */
+.feature-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-card i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--bs-primary);
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: var(--bs-secondary);
+}
+
+/* Form styling */
+.form-label {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+/* Tab navigation */
+.nav-tabs .nav-link {
+    border: none;
+    color: var(--bs-secondary);
+    font-weight: 500;
+    padding: 10px 15px;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--bs-primary);
+    border-bottom: 2px solid var(--bs-primary);
+    background-color: transparent;
+}
+
+.nav-tabs .nav-link:hover:not(.active) {
+    color: var(--bs-primary);
+    border-bottom: 2px solid rgba(var(--bs-primary-rgb), 0.5);
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    vertical-align: middle;
+}
+
+.table thead th {
+    border-bottom: 2px solid var(--bs-border-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(var(--bs-primary-rgb), 0.05);
+}
+
+/* Badge styling */
+.badge {
+    padding: 0.5em 0.75em;
+    font-weight: 500;
+}
+
+/* Visual selector styling */
+#visual-selector-container {
+    position: relative;
+}
+
+#visual-selector-iframe {
+    width: 100%;
+    height: 600px;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 4px;
+}
+
+#visual-selector-tools {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--bs-light);
+    border-radius: 4px;
+}
+
+/* Scrape result styling */
+.scraped-content, .ai-content {
+    border: 1px solid var(--bs-border-color);
+    border-radius: 4px;
+    padding: 15px;
+    background-color: rgba(var(--bs-light-rgb), 0.5);
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.scraped-content img, .ai-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Settings sections */
+.settings-section {
+    margin-bottom: 30px;
+}
+
+.settings-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+/* API key fields */
+.api-key-field {
+    position: relative;
+}
+
+.api-key-field .input-group-text {
+    cursor: pointer;
+}
+
+/* Categories checkboxes */
+.categories-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* Alerts container */
+#alerts-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+    min-width: 300px;
+}
+
+/* Footer credit */
+.ai-news-scraper-auto-blogger-pro-footer-credit {
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--bs-secondary);
+    border-top: 1px solid var(--bs-border-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .ai-news-scraper-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .ai-news-scraper-header p {
+        font-size: 1rem;
+    }
+    
+    #visual-selector-iframe {
+        height: 400px;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+}
